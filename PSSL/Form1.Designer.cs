@@ -30,6 +30,7 @@
         {
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
+            textBox1 = new TextBox();
             richTextBox2 = new RichTextBox();
             usernamebox = new TextBox();
             richTextBox1 = new RichTextBox();
@@ -44,11 +45,11 @@
             listBox1 = new ListBox();
             label1 = new Label();
             tabPage2 = new TabPage();
+            listBox3 = new ListBox();
+            label5 = new Label();
             tab2usernamebox = new TextBox();
             listBox2 = new ListBox();
             label4 = new Label();
-            label5 = new Label();
-            listBox3 = new ListBox();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
             tabPage2.SuspendLayout();
@@ -67,6 +68,7 @@
             // tabPage1
             // 
             tabPage1.BackColor = Color.LightYellow;
+            tabPage1.Controls.Add(textBox1);
             tabPage1.Controls.Add(richTextBox2);
             tabPage1.Controls.Add(usernamebox);
             tabPage1.Controls.Add(richTextBox1);
@@ -86,6 +88,13 @@
             tabPage1.Size = new Size(768, 516);
             tabPage1.TabIndex = 0;
             tabPage1.Text = "tabPage1";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(365, 165);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(269, 23);
+            textBox1.TabIndex = 13;
             // 
             // richTextBox2
             // 
@@ -116,7 +125,7 @@
             button5.Name = "button5";
             button5.Size = new Size(100, 30);
             button5.TabIndex = 9;
-            button5.Text = "button5";
+            button5.Text = "process starter";
             button5.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -125,7 +134,7 @@
             button4.Name = "button4";
             button4.Size = new Size(100, 30);
             button4.TabIndex = 8;
-            button4.Text = "button4";
+            button4.Text = "Hello";
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
             // 
@@ -137,6 +146,7 @@
             buttondevmgmt.TabIndex = 7;
             buttondevmgmt.Text = "Device Manager";
             buttondevmgmt.UseVisualStyleBackColor = true;
+            buttondevmgmt.Click += buttondevmgmt_Click;
             // 
             // buttontaskmgr
             // 
@@ -217,6 +227,25 @@
             tabPage2.Text = "Kayıt Oluşturucu";
             tabPage2.UseVisualStyleBackColor = true;
             // 
+            // listBox3
+            // 
+            listBox3.FormattingEnabled = true;
+            listBox3.ItemHeight = 15;
+            listBox3.Items.AddRange(new object[] { "asd", "asd", "asd", "a", "sd" });
+            listBox3.Location = new Point(315, 62);
+            listBox3.Name = "listBox3";
+            listBox3.Size = new Size(120, 94);
+            listBox3.TabIndex = 5;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(131, 44);
+            label5.Name = "label5";
+            label5.Size = new Size(55, 15);
+            label5.TabIndex = 3;
+            label5.Text = "Template";
+            // 
             // tab2usernamebox
             // 
             tab2usernamebox.Location = new Point(25, 62);
@@ -242,25 +271,6 @@
             label4.Size = new Size(60, 15);
             label4.TabIndex = 0;
             label4.Text = "Username";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(131, 44);
-            label5.Name = "label5";
-            label5.Size = new Size(55, 15);
-            label5.TabIndex = 3;
-            label5.Text = "Template";
-            // 
-            // listBox3
-            // 
-            listBox3.FormattingEnabled = true;
-            listBox3.ItemHeight = 15;
-            listBox3.Items.AddRange(new object[] { "asd", "asd", "asd", "a", "sd" });
-            listBox3.Location = new Point(315, 62);
-            listBox3.Name = "listBox3";
-            listBox3.Size = new Size(120, 94);
-            listBox3.TabIndex = 5;
             // 
             // Form1
             // 
@@ -301,5 +311,6 @@
         private TextBox tab2usernamebox;
         private ListBox listBox3;
         private Label label5;
+        private TextBox textBox1;
     }
 }

@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using System.Diagnostics.Metrics;
 
 namespace PSSL
 {
@@ -25,6 +26,22 @@ namespace PSSL
         {
             MessageBox.Show($"Hello {usernamebox.Text}, you can use your computer {computernamebox.Text}");
         }
+
+        private void buttondevmgmt_Click(object sender, EventArgs e)
+        {
+            var process = new ProcessStartInfo();
+            process.UseShellExecute = true;
+            //proc1.Verb = "runas";
+
+            process.WorkingDirectory = @"C:\Windows\System32";
+            process.FileName = @"C:\Windows\System32\cmd.exe";
+            process.UserName = "system";
+            string anyCommand = "devmgmt.msc";
+            process.Arguments = "/c " + anyCommand;
+            process.WindowStyle = ProcessWindowStyle.Hidden;
+            Process.Start(process);
+        }
+
         //made a change to test reverting back to a previous version
         //git revert is different from git reset
         //when revert is done, it doesn't edit history but adds to it
