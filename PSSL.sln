@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33801.468
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSSL", "PSSL\PSSL.csproj", "{B33B8EAA-E75A-4507-BB5D-EC2CB078CCCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B33B8EAA-E75A-4507-BB5D-EC2CB078CCCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B33B8EAA-E75A-4507-BB5D-EC2CB078CCCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B33B8EAA-E75A-4507-BB5D-EC2CB078CCCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B33B8EAA-E75A-4507-BB5D-EC2CB078CCCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EEB0B9F-607C-42D2-9364-363F3E2C08AC}
+	EndGlobalSection
+EndGlobal
